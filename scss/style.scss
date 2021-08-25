@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+svg,
+button,
+span {
+  display: inline-block;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+@import "./variables";
+@import "./utils";
+@import "./small";
+
+@media only screen and (min-width: 768px) {
+  @import "./medium";
+}
+
+@media only screen and (min-width: 985px) {
+  @import "./large";
+}
+
+@media only screen and (min-width: 1200px) {
+  @import "./extra-large";
+}

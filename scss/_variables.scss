@@ -1,0 +1,23 @@
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+}
+
+$typeScale: 1.25;
+$baseSize: 1.45rem;
+$heightScale: 1.2;
+$lineHeight: 2.1rem;
+$h5: $baseSize;
+$parag: calc(#{$baseSize} * #{$typeScale});
+$h4: calc(#{$parag} * #{$typeScale});
+$h3: calc(#{$h4} * #{$typeScale});
+$h2: calc(#{$h3} * #{$typeScale});
+$h1: calc(#{$h2} * #{$typeScale});
+$h5LHeight: $lineHeight;
+$paragLHeight: calc(#{$lineHeight} * #{$heightScale});
+$h4LHeight: calc(#{$paragLHeight} * #{$heightScale});
+$h3LHeight: calc(#{$h4LHeight} #{$heightScale});
+$h2LHeight: calc(#{$h3LHeight} * #{$heightScale});
+$h1LHeight: calc(#{$h2LHeight} * #{$heightScale});

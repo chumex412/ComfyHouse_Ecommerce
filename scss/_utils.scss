@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.h1 {
+  font-size: $h1;
+  line-height: $h1LHeight;
+}
+
+.h2 {
+  font-size: $h2;
+  line-height: $h2LHeight;
+}
+
+.h3 {
+  font-size: $h3;
+  line-height: $h3LHeight;
+}
+
+.h4 {
+  font-size: $h4;
+  line-height: $h4LHeight;
+}
+
+.h5 {
+  font-size: $h5;
+  line-height: $h5LHeight;
+}
+
+.parag {
+  font-size: $parag;
+  line-height: $paragLHeight;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  font-size: $parag;
+  line-height: $paragLHeight;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
