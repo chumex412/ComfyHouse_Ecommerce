@@ -1,5 +1,8 @@
 /* Navigation abr */
 .navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
   background: rgb(231, 226, 221);
   z-index: 1;
 }
@@ -22,6 +25,7 @@
 
 .nav-icon {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .cart-btn {
@@ -188,9 +192,9 @@
   z-index: 3;
   padding: 1.5rem;
   background: rgb(231, 226, 221);
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
   transform: translateX(101%);
   -webkit-transform: translateX(101%);
   -moz-transform: translateX(101%); 
@@ -234,6 +238,7 @@
     .decrement {
       width: 2.4rem;
       height: 2.4rem;
+      cursor: pointer;
     }
   }
 
@@ -254,5 +259,6 @@
   font-size: 2rem;
   background: var(--mainBlack);
   padding: 0.5rem 1rem;
-  color: var(--mainWhite)
+  color: var(--mainWhite);
+  cursor: pointer;
 }
