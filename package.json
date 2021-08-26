@@ -1,0 +1,27 @@
+{
+  "name": "comfyhome-e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --output-public-path=/build/ --hot --open",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "json:server": "json-server --watch api/db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^6.0.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
