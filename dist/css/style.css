@@ -72,6 +72,9 @@ button {
 
 /* Navigation abr */
 .navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
   background: #e7e2dd;
   z-index: 1; }
 
@@ -90,7 +93,8 @@ button {
   height: 2rem; }
 
 .nav-icon {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  cursor: pointer; }
 
 .cart-btn {
   position: relative;
@@ -228,9 +232,9 @@ button {
   z-index: 3;
   padding: 1.5rem;
   background: #e7e2dd;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
   transform: translateX(101%);
   -webkit-transform: translateX(101%);
   -moz-transform: translateX(101%); }
@@ -259,7 +263,8 @@ button {
     .cart .cart-item .increment,
     .cart .cart-item .decrement {
       width: 2.4rem;
-      height: 2.4rem; }
+      height: 2.4rem;
+      cursor: pointer; }
   .cart .cart-footer {
     padding: 2rem 0;
     text-align: center; }
@@ -273,9 +278,19 @@ button {
   font-size: 2rem;
   background: var(--mainBlack);
   padding: 0.5rem 1rem;
-  color: var(--mainWhite); }
+  color: var(--mainWhite);
+  cursor: pointer; }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 90%; }
+  .cart {
+    width: 35vw;
+    min-width: 40rem; } }
 
 @media only screen and (min-width: 985px) {
+  .container {
+    max-width: 85%; }
   .cart {
     width: 30vw;
     min-width: 25rem; } }
